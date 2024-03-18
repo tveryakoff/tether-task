@@ -1,0 +1,47 @@
+{
+    "env": {
+    "browser": true,
+      "es2021": true,
+      "jest": true
+},
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:react/jsx-runtime",
+      "plugin:react-hooks/recommended",
+      "plugin:@typescript-eslint/recommended",
+      // Prettier should always go last
+      "prettier"
+],
+  "overrides": [],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+        "jsx": true
+    },
+    "ecmaVersion": 12,
+      "sourceType": "module"
+},
+  "plugins": ["react","@typescript-eslint", "jsx-a11y", "prettier"],
+  "rules": {
+    "react/react-in-jsx-scope": ["off"],
+    "prettier/prettier": "warn",
+    "prefer-const": "error",
+    // Change from "off" to "error" after global refactoring
+    "@typescript-eslint/ban-ts-comment": "off",
+    // Debatable
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-empty-interface": "off",
+    "react/prop-types": "off",
+    "no-prototype-builtins": "off",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error"
+
+},
+    "settings": {
+    "import/resolver": {
+        "typescript": {}
+    }
+}
+}
