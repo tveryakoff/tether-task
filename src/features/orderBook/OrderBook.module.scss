@@ -1,0 +1,15 @@
+.tableWrapper {
+  display: grid;
+
+  width: 100%;
+  margin: 0 auto;
+  column-gap: 16px;
+  row-gap: 24px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.select {
+  display: block;
+  margin-top: 14px;
+  width: 200px;
+}
